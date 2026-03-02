@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <!-- Heredar el dashboard de diarios contables -->
-    <record id="account_journal_dashboard_kanban_view_inherit" model="ir.ui.view">
-        <field name="name">account.account.journal.dashboard.kanban.inherit</field>
-        <field name="model">account.journal</field>
-        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view"/>
+    <record id="account_view_move_form_inherit_header" model="ir.ui.view">
+        <field name="name">account.view.move.form.inherit.header</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
         <field name="arch" type="xml">
 
             <!-- OPCIÓN A: Agregar botones en el header del kanban -->
-            <xpath expr="//div[@class='o_control_panel']" position="inside">
+             <xpath expr="//form/header" position="inside">
                 <div class="o_custom_dashboard_buttons" style="margin: 20px 0;">
                     <h3 class="text-center">Accesos Rápidos</h3>
                     <div class="row text-center">

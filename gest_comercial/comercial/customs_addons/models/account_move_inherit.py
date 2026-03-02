@@ -1,7 +1,7 @@
 from odoo import models, fields, api
 
-class AccountJournalInherit(models.Model):
-    _inherit = 'account.journal'
+class AccountMoveInherit(models.Model):
+    _inherit = 'account.move'
 
     # Métodos para los 4 botones del dashboard
     def action_control_comercial(self):
