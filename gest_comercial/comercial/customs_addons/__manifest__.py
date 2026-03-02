@@ -14,8 +14,7 @@
     'data': [
         'security/ir.model.access.csv',
         'views/account_journal_dashboard_inherit.xml',
-        'views/dashboard_views.xml',
-        'views/menu_views.xml',
+
 
             ],
     'installable': True,

@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
 
             <!-- OPCIÓN A: Agregar botones en el header del kanban -->
-            <xpath expr="//div[@class='o_journal_dashboard']" position="inside">
+            <xpath expr="//div[@class='o_control_panel']" position="inside">
                 <div class="o_custom_dashboard_buttons" style="margin: 20px 0;">
                     <h3 class="text-center">Accesos Rápidos</h3>
                     <div class="row text-center">
