@@ -1,6 +1,6 @@
 {
     'name': 'Commercial Management',
-    'version': '18.0',
+    'version': '1.0',
     'category': 'Human Resources',
     'summary': 'Complete business management, applications, document management and deliveries.',
     'description': """
@@ -12,7 +12,10 @@
     'website': '',
     'depends': ['account_area_expense', 'hr_expense'],
     'data': [
-       'views/control_comecial_view.xml',
+        'security/ir.model.access.csv',
+        'views/account_journal_dashboard_inherit.xml',
+        'views/dashboard_views.xml',
+        'views/menu_views.xml',
 
             ],
     'installable': True,
