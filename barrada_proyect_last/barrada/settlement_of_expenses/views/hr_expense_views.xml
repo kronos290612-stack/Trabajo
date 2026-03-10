@@ -64,7 +64,7 @@
                 <field name="original_sheet_id" invisible="1"/>
                 <field name="settlement_sheet_id" invisible="1"/>
            </xpath>
-           
+
             <!-- Botón Liquidar Anticipo (solo en estado 'done' y no es liquidación) -->
             <xpath expr="//header/button[@name='action_register_payment']" position="after">
                 <button name="action_settle_advance"
