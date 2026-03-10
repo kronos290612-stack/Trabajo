@@ -10,7 +10,7 @@
      """,
     'author': 'KRONOS',
     'website': '',
-    'depends': ['account'],
+    'depends': ['account_area_expense', 'hr_expense'],
     'data': [
         'security/ir.model.access.csv',
         'views/account_move_form_header.xml.xml',
