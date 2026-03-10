@@ -54,16 +54,16 @@
             </page>
 
             <!-- Agregar información de liquidación en el header -->
-<!--            <xpath expr="//field[@name='state']" position="after">-->
-<!--                <field name="liquidation_status"-->
-<!--                       widget="badge"-->
-<!--                       invisible="state == 'draft'"-->
-<!--                       decoration-success="liquidation_status == 'liquidated'"-->
-<!--                       decoration-warning="liquidation_status == 'pending'"/>-->
-<!--               <field name="is_liquidation" invisible="1"/>-->
-<!--               <field name="original_sheet_id" invisible="1"/>-->
-<!--                <field name="settlement_sheet_id" invisible="1"/>-->
-<!--            </xpath>-->
+           <xpath expr="//field[@name='state']" position="after">
+                <field name="liquidation_status"
+                      widget="badge"
+                       invisible="state == 'draft'"
+                      decoration-success="liquidation_status == 'liquidated'"
+                       decoration-warning="liquidation_status == 'pending'"/>
+                <field name="is_liquidation" invisible="1"/>
+                <field name="original_sheet_id" invisible="1"/>
+                <field name="settlement_sheet_id" invisible="1"/>
+           </xpath>
            
             <!-- Botón Liquidar Anticipo (solo en estado 'done' y no es liquidación) -->
             <xpath expr="//header/button[@name='action_register_payment']" position="after">
@@ -111,7 +111,7 @@
                 <field name="liquidation_status" invisible="1"/>
             </xpath>
             <xpath expr="//list" position="attributes">
-                <attribute name="decoration-danger">is_liquidation == True</attribute>
+                <attribute name="decoration-danger"> is_liquidation == True</attribute>
             </xpath>
         </field>
     </record>

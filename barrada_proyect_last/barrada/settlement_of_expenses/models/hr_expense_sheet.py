@@ -24,6 +24,13 @@ class HrExpenseSheet(models.Model):
         readonly=True
     )
 
+    is_liquidation = fields.Boolean(
+        string='Is_liquidation',
+        default=False,
+        store=True,
+        copy=False
+    )
+
     refund = fields.Monetary(
         string='Refund',
         compute='_compute_diferenc',
@@ -91,11 +98,6 @@ class HrExpenseSheet(models.Model):
         help='Original advance payment slip that originated this settlement'
     )
 
-    is_liquidation = fields.Boolean(
-        string='Is_liquidation',
-        default=False,
-        copy=False
-    )
 
     total_experiences_verified = fields.Monetary(
         string='Total Verified Expenses',

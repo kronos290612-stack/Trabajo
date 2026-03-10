@@ -28,5 +28,11 @@ class HrExpense(models.Model):
         help='Negative: employee owes money to the company\nPositive: company owes money to employee'
     )
 
+    is_liquidation = fields.Boolean(
+        string='Is_liquidation',
+        default=False,
+        copy=False
+    )
+
 
 
