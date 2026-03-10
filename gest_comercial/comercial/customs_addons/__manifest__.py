@@ -13,7 +13,7 @@
     'depends': ['account_area_expense', 'hr_expense'],
     'data': [
         'security/ir.model.access.csv',
-        'views/.xml',
+        'views/menu_views.xml',
 
 
             ],
