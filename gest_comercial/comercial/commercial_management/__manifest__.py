@@ -12,7 +12,6 @@
     'website': '',
     'depends': ['account_area_expense', 'hr_expense'],
     'data': [
-        'security/ir.model.access.csv',
         'views/menu_views.xml',
 
 
